@@ -115,7 +115,7 @@ putBtn.onclick = () => {
   })
     .then((resp) => {
       window.alert("Item successfully modified!");
-      window.location.assign("./index.html");
+      window.location.assign("./homePage.html");
     })
     .catch((err) =>
       window.alert("An error has occurred. Please consult your developer.")
