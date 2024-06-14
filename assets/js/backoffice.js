@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 const form = document.getElementById("main-form");
 
+//Aggiungere o modificare un prodotto con una POST o una PUT
+
+//Funzione per la POST ( aggiungere un nuovo prodotto)
+
 const postPage = () => {
   form.onsubmit = (e) => {
     e.preventDefault();
@@ -51,6 +55,8 @@ const postBtn = document.getElementById("post-btn");
 const putBtn = document.getElementById("put-btn");
 const removeBtn = document.getElementById("remove-btn");
 const resetBtn = document.getElementById("reset-btn");
+
+//Funzione per la PUT (modificare il prodotto esistente)
 
 const editPage = () => {
   postBtn.classList.add("d-none");
@@ -115,6 +121,7 @@ putBtn.onclick = () => {
       window.alert("An error has occurred. Please consult your developer.")
     );
 };
+// Al click del bottone REMOVE ITEM eliminare il prodotto con una DELETE
 
 removeBtn.onclick = () => {
   if (

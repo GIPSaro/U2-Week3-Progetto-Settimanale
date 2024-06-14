@@ -17,12 +17,19 @@ window.onload = () => {
         const price = productObj.price;
         const productId = productObj._id;
 
+        //Assegnazione dei valori dell'endpoint alle card
+
         cardCreation(imageUrl, name, description, price, productId);
+
+        //SPINNER
+
         const spinner = document.getElementById("spinner");
         spinner.classList.add("d-none");
       });
     });
 };
+
+//Creazione delle card
 
 const cardCreation = (imageUrl, name, description, price, productId) => {
   const row = document.getElementById("main-row");
@@ -52,13 +59,13 @@ const cardCreation = (imageUrl, name, description, price, productId) => {
   btnGroup.className = "btn-group";
   btnGroup.setAttribute("role", "group");
   const detailsBtn = document.createElement("button");
-  detailsBtn.className = "btn btn-primary py-1 px-2";
+  detailsBtn.className = "btn btn-outline-secondary py-1 px-2";
   detailsBtn.innerText = "Show more";
   detailsBtn.addEventListener("click", () => {
     window.location.assign("./details.html?prId=" + productId);
   });
   const modifyBtn = document.createElement("button");
-  modifyBtn.className = "btn btn-success py-1 px-2 modify";
+  modifyBtn.className = "btn btn-outline-secondary py-1 px-2 modify";
   modifyBtn.innerText = "Edit Item";
   modifyBtn.addEventListener("click", () => {
     window.location.assign("./backoffice.html?prId=" + productId);
