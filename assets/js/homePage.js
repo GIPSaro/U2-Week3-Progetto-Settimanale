@@ -1,9 +1,9 @@
-const mainEndpoint = "https://striveschool-api.herokuapp.com/api/product";
+const urlEndpoint = "https://striveschool-api.herokuapp.com/api/product";
 const authKey =
   "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRkZjAxMDI1NGU4ODAwMTgzZjE4YTQiLCJpYXQiOjE3MTgzNTM3MjgsImV4cCI6MTcxOTU2MzMyOH0.ZiD7oCZQw3OjVILvPXCHqSeXVgqEWy73qe8hp3fAJ8U";
 
 window.onload = () => {
-  fetch(mainEndpoint, {
+  fetch(urlEndpoint, {
     headers: {
       Authorization: authKey,
     },
