@@ -1,0 +1,9 @@
+body {
+  font-family: "Open-Sans", sans-serif;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: rgb(175, 175, 175);
+  height: 150px;
+}
